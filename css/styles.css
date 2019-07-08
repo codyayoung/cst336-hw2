@@ -1,0 +1,71 @@
+body {
+    background-color: white !important;
+}
+h1 {
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 5em !important;
+    margin-bottom: 0px !important;
+}
+
+h4 {
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+h2 {
+    font-family: 'Archivo Narrow', sans-serif !important;
+    font-size: 4em !important;
+}
+
+p {
+    font-family: 'Courier New', 'Courier New', 'Courier New', Courier, monospace !important;
+    font-size: 13px;
+}
+
+#cart {
+    margin: 0px auto;
+    width: 100%;
+}
+
+
+#cart thead th {
+    font-family: 'Courier New', 'Courier New', Courier, monospace !important;
+    font-size: 16px; 
+    font-weight: bold;
+    text-align: center !important;
+}
+
+#cart thead th.cart_item {
+     width: 100px;
+}
+
+#cart thead th.cart_price { 
+    width: 100px;
+}
+
+#cart thead th.cart_quantity {
+    width: 100px;
+}
+
+#cart_header_text {
+    text-align: center;
+}
+
+#jordan1_img {
+    float: left;
+}
+
+#jordan1_text {
+    margin-top: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#ultraboost_img {
+    float: left;
+}
+
+#ub_text {
+    margin-top: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
