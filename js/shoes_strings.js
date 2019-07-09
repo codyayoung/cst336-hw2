@@ -73,7 +73,7 @@ $(".checkoutButton").on("click", function(){
     var timestamp = new Date($.now());
     
     if (finalCost > 0) {
-        $("#order_confirm_msg").append('Your order has been confirmed ' + '<br />' + timestamp + '');
+        $("#order_confirm_msg").html('Your order has been confirmed ' + '<br />' + timestamp + '');
         $("#order_confirm_msg").show();
 
         // Disable cart update and checkout buttons after order confirmation
@@ -83,7 +83,7 @@ $(".checkoutButton").on("click", function(){
         $(".removeBoost").attr("disabled", true);
     }
     else {
-        $("#order_confirm_msg").append('Error: Empty cart');
+        $("#order_confirm_msg").html('Error: Empty cart');
         $("#order_confirm_msg").show();
     }
 });
