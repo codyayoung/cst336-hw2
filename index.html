@@ -24,7 +24,7 @@
           <br />
         </header>
       </div>
-
+      <main>
       <div class='container text-center'>
        <table id="cart">
          <thead>
@@ -36,14 +36,75 @@
          </thead>
          <tbody>
            <tr class="air_jordan1">
-             <td><img id="jordan1_img" src="img/jordan_bred_resized.jpg" alt="Air Jordan 1 - Banned/Bred"><p id="jordan1_text">Nike Air Jordan 1 - "Banned/Bred"</p></td>
+              <td>
+                <img id="jordan1_img" src="img/jordan_bred_resized.jpg" alt="Air Jordan 1 - Banned/Bred">
+                <p id="jordan1_text">Nike Air Jordan 1 - "Banned/Bred"</p>
+              </td>
+              <td>
+                  <div><p id="jordan1_price">$169.99 USD</p></div>
+                  
+              </td>
+              <td>
+                <div>
+                  <input class="quantity_input" type="number" value="0" min="0">
+                  <button class="removeJordan">Remove</button>
+                </div>
+              </td>
            </tr>
            <tr class="ultraboost">
-             <td><img id="ultraboost_img" src="img/ultraboost_teetime _resized.jpg" alt="Adidas Ultraboost 1.0 - SNS Tee Time"><p id="ub_text">Adidas Ultraboost 1.0 - SNS Tee Time</p></td>
+              <td>
+                <img id="ultraboost_img" src="img/ultraboost_teetime _resized.jpg" alt="Adidas Ultraboost 1.0 - SNS Tee Time">
+                <p id="ub_text">Adidas Ultraboost 1.0 - "SNS Tee Time"</p>
+              </td>
+              <td>
+                  <div><p id="ultraboost_price">$199.99 USD</p></div>
+              </td>
+              <td>
+                  <input class="quantity_input" type="number" value="0" min="0">
+                  <button class="removeBoost">Remove</button>
+              </td>
            </tr>
          </tbody>
        </table>
+       
+       <br /> <br /> <br /> <br />
+       <div class='container text-center' id="totals_table_container">
+       <table class="totals">
+         <thead>
+         </thead>
+         <tbody>
+            <tr class="totals_subtotal">
+              <td id="subtotal">subtotal: $</td>
+            </tr>
+            <tr class="totals_tax">
+                <td id="tax">tax (CA): $</td>
+            </tr>
+            <tr class="final_total">
+                <td id="tax">total: $</td>
+            </tr>
+            <tr class="cart_buttons">
+                <td class="button_group">
+                  <button class="updateCart">Update Cart</button>
+                  <button class="checkoutButton">Checkout</button>
+                </td>
+            </tr>
+         </tbody>
+       </table>
+       <br />
       </div>
+      <br />
+
+
+  </main>
+  <footer>
+    <div class='container text-center'></div>
+    CST 336 Internet Programming - 2019&copy; Young <br />
+    <strong>Disclaimer:</strong> The information in this webpage is fictitious.
+    It is used for academic purposes only. <br />
+    Strings and Soles is not responsible for any attention, good looks, comfy feet, <br />
+    or photo requests while wearing cool shoes. 
+  </footer>
+  </div>
       <script src="js/shoes_strings.js"></script>
-    </body>
+</body>
 </html>

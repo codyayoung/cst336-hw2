@@ -1,14 +1,14 @@
-body {
+body footer {
     background-color: white !important;
 }
 h1 {
-    font-family: 'Roboto Mono', monospace !important;
-    font-size: 5em !important;
+    font-family: 'Archivo Narrow', sans-serif !important;
+    font-size: 6em !important;
     margin-bottom: 0px !important;
 }
 
 h4 {
-    font-family: 'Roboto Mono', monospace !important;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 h2 {
@@ -17,8 +17,77 @@ h2 {
 }
 
 p {
-    font-family: 'Courier New', 'Courier New', 'Courier New', Courier, monospace !important;
+    font-family: 'Courier New', Courier, monospace !important;
     font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace !important;
+	position: absolute !important;
+    bottom: 0 !important;
+    width: 100% !important;
+}
+
+.updateCart {
+    height: 50px;
+    width: 200px;
+    background: black;
+    border: none;
+    color: white;
+    font-family: 'Archivo Narrow', sans-serif !important;
+    font-size: 24px;
+}
+
+.checkoutButton {
+    height: 50px;
+    width: 200px;
+    background: red;
+    border: none;
+    color: white;
+    font-family: 'Archivo Narrow', sans-serif !important;
+    font-size: 24px;
+}
+
+.removeJordan {
+    height: 26px;
+    width: 60px;
+    background: lightgray;
+    border: none;
+    color: red;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+.removeBoost {
+    text-align: center;
+    height: 26px;
+    width: 60px;
+    background: lightgray;
+    border: none;
+    color: red;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+.quantity_input {
+    width: 50px;
+    margin-left: 0px auto;
+}
+
+#totals_table_container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.totals {
+    margin-right: 40px;
+    text-align: left;
+    font-family: 'Courier New', 'Courier New', 'Courier New', Courier, monospace !important;
+    font-size: 18px;
+}
+
+.final_total {
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 #cart {
@@ -60,12 +129,36 @@ p {
     text-align: center;
 }
 
+#jordan1_price {
+    margin-top: 0px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#jordan1_quantity {
+    margin-top: 0px;
+    vertical-align: middle;
+    text-align: center;
+}
+
 #ultraboost_img {
     float: left;
 }
 
 #ub_text {
     margin-top: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#ultraboost_price {
+    margin-top: 0px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#ultraboost_quantity {
+    margin-top: 0px;
     vertical-align: middle;
     text-align: center;
 }
