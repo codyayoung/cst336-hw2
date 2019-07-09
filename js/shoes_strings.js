@@ -79,6 +79,12 @@ $(".checkoutButton").on("click", function(){
         // Disable cart update and checkout buttons after order confirmation
         $(".updateCart").attr("disabled", true);
         $(".checkoutButton").attr("disabled", true);
+        $(".removeJordan").attr("disabled", true);
+        $(".removeBoost").attr("disabled", true);
+    }
+    else {
+        $("#order_confirm_msg").append('Error: Empty cart');
+        $("#order_confirm_msg").show();
     }
 });
 
