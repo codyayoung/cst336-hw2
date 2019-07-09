@@ -81,6 +81,8 @@ $(".checkoutButton").on("click", function(){
         $(".checkoutButton").attr("disabled", true);
         $(".removeJordan").attr("disabled", true);
         $(".removeBoost").attr("disabled", true);
+        $("#jordanNum").attr("disabled", true);
+        $("#boostNum").attr("disabled", true);
     }
     else {
         $("#order_confirm_msg").html('Error: Empty cart');
