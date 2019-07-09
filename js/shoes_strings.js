@@ -65,7 +65,7 @@ function updateCartValues() {
 
 // Initially hides order confirmation message
 $(document).ready(function() {
-    $("#order_confirm_msg").hide();
+    $("#order_confirm_msg").hide(); 
 });
 
 // Shows order confirmation message
