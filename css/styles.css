@@ -2,6 +2,8 @@ body footer {
     background-color: white !important;
 }
 h1 {
+    background-color: lightcoral;
+    color: white !important;
     font-family: 'Archivo Narrow', sans-serif !important;
     font-size: 6em !important;
     margin-bottom: 0px !important;
@@ -24,6 +26,7 @@ p {
 footer {
     text-align: center;
     font-family: 'Courier New', Courier, monospace !important;
+    font-size: 12px;
 	position: absolute !important;
     bottom: 0 !important;
     width: 100% !important;
@@ -74,11 +77,24 @@ footer {
 }
 
 #totals_table_container {
+    position: fixed;
     display: flex;
     justify-content: flex-end;
 }
 
+#order_confirm_msg {
+    position: absolute;
+    color: red;
+    width: 500px;
+    bottom: 150px;
+}
+
+#order_message_container {
+    position: absolute;
+}
+
 .totals {
+    position: fixed;
     margin-right: 40px;
     text-align: left;
     font-family: 'Courier New', 'Courier New', 'Courier New', Courier, monospace !important;

@@ -33,7 +33,7 @@ function calcSubTotal(jAmount, ubAmount) {
 }
 
 // Calculates tax
-function calcTax () {
+function calcTax() {
     taxAmount = tax * subtotal;
     taxAmount = parseFloat(taxAmount);
     taxAmount = taxAmount.toFixed(2);
@@ -62,7 +62,26 @@ function updateCartValues() {
 }
 
 // jQuery Handlers
-// Shows checkout confirmation message
+
+// Initially hides order confirmation message
+$(document).ready(function() {
+    $("#order_confirm_msg").hide();
+});
+
+// Shows order confirmation message
+$(".checkoutButton").on("click", function(){
+    var timestamp = new Date($.now());
+    
+    if (finalCost > 0) {
+        $("#order_confirm_msg").append('Your order has been confirmed ' + '<br />' + timestamp + '');
+        $("#order_confirm_msg").show();
+
+        // Disable cart update and checkout buttons after order confirmation
+        $(".updateCart").attr("disabled", true);
+        $(".checkoutButton").attr("disabled", true);
+    }
+});
+
 // Updates all values on button press
 $(".updateCart").on("click", function(){
     updateCartValues();
@@ -70,7 +89,11 @@ $(".updateCart").on("click", function(){
 
 // Remove buttons behavior - resets quantity to 0, updates cart on button press
 $(".removeJordan").on("click", function(){
+    $("#jordanNum").val('0');
+    updateCartValues();
 });
 
 $(".removeBoost").on("click", function(){
+    $("#boostNum").val('0');
+    updateCartValues();
 });
